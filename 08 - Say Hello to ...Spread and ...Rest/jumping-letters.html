@@ -30,6 +30,19 @@
   <h2 class="jump">SPREADS!</h2>
 
 <script>
+
+  const word = document.querySelector('.jump').innerHTML;
+  const chars = [...word];
+  
+  const chars2 = chars.map( c => `<span class='jump'>${c}</span>` );
+  
+  let newWord = '';
+
+  for (ch of chars2){
+    newWord += ch;
+  }
+  
+  document.querySelector('h2').innerHTML = newWord;
   
 </script>
 </body>
